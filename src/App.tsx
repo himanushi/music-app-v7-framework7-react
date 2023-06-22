@@ -6,7 +6,15 @@ import { useBrowserBack } from "~/hooks";
 export default () => {
   useBrowserBack();
   return (
-    <App theme="ios" name="app" routes={routes}>
+    <App
+      theme="ios"
+      name="app"
+      routes={routes}
+      popup={{ closeOnEscape: true }}
+      sheet={{ closeOnEscape: true }}
+      popover={{ closeOnEscape: true }}
+      actions={{ closeOnEscape: true }}
+    >
       <View
         browserHistory
         browserHistorySeparator=""
