@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "build": "tsc && vite build"
   },
   "dependencies": {
+    "framework7": "^8.1.0",
+    "framework7-react": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
