@@ -1,14 +1,5 @@
-import React, { useState } from "react";
-import {
-  Navbar,
-  Page,
-  List,
-  ListItem,
-  Subnavbar,
-  Searchbar,
-  Block,
-  theme,
-} from "framework7-react";
+import { useState } from "react";
+import { Navbar, Page, List, ListItem, Block, theme } from "framework7-react";
 
 export const Albums = () => {
   const items: any[] = [];
@@ -34,7 +25,7 @@ export const Albums = () => {
     }
     return found; // return array with mathced indexes
   };
-  const renderExternal = (vl: any, newData: any) => {
+  const renderExternal = (_: any, newData: any) => {
     setVlData({ ...newData });
   };
   return (
