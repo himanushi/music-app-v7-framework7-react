@@ -16,7 +16,7 @@ export default () => {
       sheet={{ closeOnEscape: true }}
       popover={{ closeOnEscape: true }}
       actions={{ closeOnEscape: true }}
-      panel={{ swipe: true }}
+      // panel={{ swipe: false }}
     >
       <View browserHistory browserHistorySeparator="" />
     </App>
