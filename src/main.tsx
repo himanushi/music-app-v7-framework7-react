@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import Framework7 from "framework7/lite";
+import Framework7 from "framework7/lite-bundle";
 import Framework7React from "framework7-react";
 Framework7.use(Framework7React);
 import "framework7/css/bundle";
