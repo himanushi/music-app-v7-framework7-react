@@ -7,17 +7,7 @@ export default () => {
   useBrowserBack();
 
   return (
-    <App
-      dark
-      theme="md"
-      name="app"
-      routes={routes}
-      popup={{ closeOnEscape: true }}
-      sheet={{ closeOnEscape: true }}
-      popover={{ closeOnEscape: true }}
-      actions={{ closeOnEscape: true }}
-      // panel={{ swipe: false }}
-    >
+    <App dark theme="ios" name="app" routes={routes}>
       <View browserHistory browserHistorySeparator="" />
     </App>
   );
