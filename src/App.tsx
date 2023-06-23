@@ -5,21 +5,20 @@ import { useBrowserBack } from "~/hooks";
 
 export default () => {
   useBrowserBack();
+
   return (
     <App
-      theme="ios"
+      dark
+      theme="md"
       name="app"
       routes={routes}
       popup={{ closeOnEscape: true }}
       sheet={{ closeOnEscape: true }}
       popover={{ closeOnEscape: true }}
       actions={{ closeOnEscape: true }}
+      panel={{ swipe: true }}
     >
-      <View
-        browserHistory
-        browserHistorySeparator=""
-        url={location.pathname + location.search}
-      />
+      <View browserHistory browserHistorySeparator="" />
     </App>
   );
 };
